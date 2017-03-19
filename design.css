@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+    background-color: black;
+}
+h1,h6{
+    color: azure;
+    font-family: Silom;
+    position: relative;
+    -webkit-animation:h1Animation 5s;
+
+}
+canvas{
+    height:50px;
+    width: 50px;
+    border-style:outset;
+    position:relative;
+    -webkit-animation:canvasAnimation 5s;
+    background-color: aliceblue;
+
+}
+@-webkit-keyframes canvasAnimation {
+    0% {-webkit-transform:rotate(90deg);left:0px; top:0px;}
+}
+@-webkit-keyframes h1Animation{
+    0%   {-webkit-transform: scale(0,0);}
+    50% {-webkit-transform: scale(0,0);}
+    100%  {-webkit-transform: scale(100,100);}
+}
+
