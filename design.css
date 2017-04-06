@@ -1,0 +1,49 @@
+body{
+    text-align: center;
+    background-color: orange;
+}
+h1,h6{
+    color: #373D3F;
+    font-family: "Latin Modern Math";
+    position: relative;
+    -webkit-animation:h1Animation 5s;
+    margin-bottom: 5px;
+}
+h6{
+    margin-top: 10px;
+}
+canvas{
+    height:100px;
+    width: 100px;
+    border-top-style: none;
+    border-right-style: solid;
+    border-left-style: none;
+    border-bottom-style: double;
+    position:relative;
+    -webkit-animation:canvasAnimation 5s;
+    background-color: orange;
+}
+#c2,#c5,#c8{
+    border-right-style: none;
+}
+#c6,#c7,#c8{
+    border-left-style: none;
+    border-bottom-style: none;
+}
+
+input{
+    color: white;
+    background-color: #008000;
+    border-style: solid ;
+    border-color: #008000;
+    height: 50px;
+}
+@-webkit-keyframes canvasAnimation {
+    0% {-webkit-transform:rotate(45deg);left:0px; top:0px;}
+}
+@-webkit-keyframes h1Animation{
+    0%   {-webkit-transform: scale(0,0);}
+    30% {-webkit-transform: scale(10,10);}
+    60%  {-webkit-transform: scale(20,20);}
+}
+
